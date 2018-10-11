@@ -1,0 +1,251 @@
+DualClip Translator "powered by Google/Microsoft"
+
+WEB Project Home - http://dcliptranslator.sourceforge.net/
+WEB Develop Code - http://sourceforge.net/projects/dcliptranslator/
+eMail - Stelars@users.sourceforge.net
+
+v2.4	(2017-01-29)
+ - Fixed Engine Google Connection Pharser.
+
+v2.3.5	(2016-08-03)
+ - optimize autochange used Engine Microsoft for fixed Connection: java.io.IOException: Server returned HTTP response code: 503 for URL: http://translate.google.com
+ - update library microsoft-translator-java-api-0.6.2.jar
+
+v2.3.1	(2016-08-02)
+ - fixed in functions Cadenas of replace EOL 0D0A in used Engine Microsoft
+
+v2.3	(2016-07-31)
+ - update of tesseract 3.02 portable version
+ - update version in library (jar/dll) JIntellitype 1.3.9
+ - add all tesseractOCR lenguages ​​selectable in settings (the languages must install them manually)
+ - fixed add detect library libJXGrabKey64.so for Linux Systems 64bits
+
+v2.2	(2012-06-30)
+ - added change Priority High/Normal to accelerate the speed show/process result of translation
+ - fixed save one of multiple windows result translations, after pressing S or A
+ - update library google-api-translate-java-0.97.jar [small size & only need for Language Supports)
+ - update library microsoft-translator-java-api-0.61.jar
+
+v2.1.9	(2011-12-29)
+ - optimize filter detect of languages
+ - fixed switch autochange engine
+
+v2.1.6	(2011-12-24)
+ - fixed/added method for Detector Languages in Google, with Url RequestProperty
+ - fixed for detection language Portugese, Brasil, África
+
+v2.1.5	(2011-11-12)
+ - added method for Google, with Url RequestProperty "http://translate.google.com/translate_a/"
+ - now can translate more sentences in google, without return Quota Exceeded
+ - remove wait time for Google, and disable other functions to optimize
+ - fixed added mark EOL when translating with Microsoft, for can view the line breaks
+ - fixed added mark in time of subtitles when translating with Microsoft, that is not changed values
+ - optimize autoSwith, now used Engine Google <or> Microsoft, when any exception return
+ - added *New Feature* closed "in Window" result translation, with (Right Mouse Button)
+ - added *New Feature* in Screen Capture, when down the [(CTRL or SHIFT) + (Left Mouse Button)] then only shows the result of the OCR, without translating
+ - added in Screen Capture, when the key is pressed (CTRL or SHIFT), change selection to "Color.gray"
+
+v2.1	(2011-10-31)
+ - added time wait 5 minutes, when google returns [403] Quota Exceeded. While it used Microsoft
+ - fixed name return of engine used
+
+v2.0	(2011-10-20)
+ - added Microsoft Translator API // optimize code for switch Google/Microsoft API
+ - added autoSwith used Engine Microsoft API, cuando Google returned error: [403] Quota Exceeded.
+
+v1.7	(2011-09-17)
+ - added in about, button to go "Web Home" of this project
+ - added in help, button to go "Guide Online" at the web of this project
+ - added pressing new buttons of about&help, automatically closes the window of about/help
+ - added auto language detection the user to display text in "Options" and "Help" in Spanish/English
+ - added in Help, buttons with Spanish/English flags to change language manually
+ - Added more accurate and rapid method to detect the language to translate
+ - fixed the auto adjustment of the dimensions (in Window) result
+ - fixed problem in the buffer, for opening large files
+ - optimize code of "File Open", used FileNameExtensionFilter JDK 1.6, for JFileChooser
+ - added support in "File Open" for translate SRT (subtitles)
+
+v1.6.7	(2011-08-22)
+ - added for (in Window) view result translation
+ - added in Option Menu, can configure the maximum size of "width/Height" for window
+ - added in Option Menu, can change the font size for text shown in the window
+ - added in Option Menu, scroll when the text displayed exceed the parameter "height"
+ - active Resizable (in Window), for manual adjustment of the resulting size
+
+v1.6.5	(2011-08-16)
+ - fixed for Cancel the selection Screen Capture with pressing the right mouse button
+ - change Color of selection Screen Capture, to "Color.darkGray", for avoid confusion with black backgrounds
+ - adjustments lows in result (in Window) to display the text of long length
+ - fixed of v1.6.2 for erasing the last EOL of result translation in linux
+
+v1.6.2	(2011-08-12)
+ - change method of translating multiple lines
+ - improves the speed of text translation with more than 1 line, when it detects Google API.
+ - disable/enable (commons logging), logging not shown in compiled beta (almost released).
+
+v1.6.1	(2011-08-08)
+ - fixed change URL of Translate.setHttpReferrer
+   "http://sourceforge.net/projects/dcliptranslator/"
+   to
+   "http://dcliptranslator.sourceforge.net/"
+   to avoid download confused, of programs like example: JDownloader.
+ - Spanish - Cambio del Referrer para evitar descarga confusion, como ocurre con: JDownloader.
+
+v1.6	(2011-07-07)
+ - added Screen Capture Rectangle for selected part of Desktop to OCR
+ - added support Tesseract v3.00.1 OCR (Optical Character Recognition)
+ - added Runtime portable in Windows with English/Spanish recognize. "Linux need install"
+ - added Options OCR for change scale Dpi 300, 400, 600, and Language (English/Spanish)
+ - added (in Window) result, if press "A" All, "S" Save in File TXT the Original/Translation
+ - added item "Save" in Systray, for Save in File TXT the last Translation result.
+ - fixed option (in Balloon/in Window), which returned to its default state (balloon) after saving
+
+v1.5	(2011-06-15)
+ - new method of the System Tray item Menu with icons
+ - fixed old bug(v0.9.3) of GET clipboard content in windows, using alternative SWT
+ - added funciones of autoCopy Selected Text and Translated, view Help for more details
+ - changed the functions performed (X) (C), view Help for more details
+ - fixed adjustments to the detector, when translating one word Spanish
+ - adapted icon "system tray", when on desktop Gnome2.32.1 & Kde4.6 in default colors
+ - change the hotkeys, customize which are desired
+
+v1.2.8	(2011-06-06)
+ - update library (jar/dll) jxgrabkey-0.3.2_ubuntu910_i386
+ - fixed in language detector, not recognizing some characters correctly
+ - Improved process performance call to google translator
+ - disable debug output in JXGrabKey
+
+v1.2.7	(2011-06-04)
+English:
+ - added translate a TXT file from the Desktop&Console in Windows and Linux
+ - character encoded the string in TXT Load/Save data to UTF-8 for maximum compativility of all languages.
+ - option to automatically open the txt file, at finish of translation, with the default editor.
+ - added Color Change System Tray icon when the translation processing
+ - repaired the display of line breaks (LF, "line feed"), the results of Window/Balloon/File
+ - added in result of translation "in Window" with Always On Top and ability to move the window
+ - removed log4j-1.2.15.jar caused 60% a loop sleeping listen keys, in the RegisterHotKey of JXGrabKey (linux)
+ - has improved response rates, reduced memory usage and cpu.
+ - update version in library (jar/dll) JIntellitype 1.3.6
+
+Spanish:
+ - posibilidad de Traducir un archivo TXT desde Desktop&Consola, en Windows y Linux
+ - caracteres en UTF-8 en Load/Save del TXT para maxima compativilidad con todos los lenguages
+ - opción de abrir automaticamente el archivo txt, al finalizar la traducción, con editor por defecto.
+ - cambio de color del icono del System Tray, cuando se este procesando la traducción
+ - reparada la visualización de los saltos de línea (LF, "line feed"), en los resultados de Window/Balloon/File
+ - resultado de la traducción "in Window" con Always On Top y posibilidad de mover la ventana
+ - removido log4j-1.2.15.jar, ocasionaba el 60% de los sleeping loop listen keys, del registerHotKey de JXGrabKey (linux)
+ - al removerlo, se ha mejorado la velocidad de respuesta, disminución del uso de memoria y cpu.
+ - actualización de version en la libreria (jar/dll) JIntellitype 1.3.6
+
+v1.2	(2011-05-30)
+English:
+ - added Library "commons cli" of Apache, for used organized code for functions Command Line
+ - added translation from the (Command Line)(Console), view Help and used -h for more details
+
+Spanish:
+ - añado library "commons cli" de Apache, para tener el código más organizado con el uso de opciones en la línea de comandos
+ - añado funciones para traducir desde la línea de comandos (Command Line)(Console), ver ayuda/usar -h para más detalles
+
+v1.0	(2011-05-27)
+English:
+ - remove "Substance" library by bug on linux, and now the size&memory are lower
+ - added LookAndFeel with NimbusLookAndFeel is perfect compatibility [Windows&Linux]
+ - adjustment Keys, now in Windows y Linux, equals ALT+[key]
+ - disable [HotKey ALT+C], for future option, view Help for more details.
+ - added "window input" [HotKey ALT+X] for write text in fly and send to translation
+ - added alternative view result, "in Window" or "in Balloon", "view Options for select"
+ - added closed "in Window" result translation, whith ESC key
+ - added the translated text can also be seen from command-line
+
+Spanish:
+ - eliminado la libreria "Substance" por tener bugs en linux, ahora el tamaño y la memoria son menores
+ - agrego LookAndFeel con NimbusLookAndFeel es perfecta y más compatible entre [Windows y Linux]
+ - ajuste en los Hookeys, ahora en Windows y Linux son con [ALT + key]
+ - desabilitado [ALT + C], para futura incorporacio de una nueva opción, ver la Ayuda para más detalles
+ - añado la posibilidad de escribir en Texfield [HotKey ALT + X] para traducir texto escrito
+ - añado posibilidad de ver el resultado "en Window" o "en globo/balloon", más detalles en "Opciones"
+ - añado posibilidad de cerrar "en Window", (resultado de la traducción) pulsando la tecla ESC
+ - añado posibilidad de ver el texto traducido desde la línea de comandos
+
+v0.9.5	(2011-05-21)
+ - fixed Conflict in Windows & Linux to start and KeyHooks libraries
+
+v0.9.3	(2011-05-21)
+ - bug in used Win+C and Win+X, why in auto Ctrl+C not get the clipboard content
+
+v0.9	(2011-05-20)
+ - added Options Item for save preferences and more language the user's preferred
+
+v0.6	(2011-05-15)
+ - added Global keyboard hook JIntellitype and JXGrabKey
+ - added About & Help Items
+
+v0.3	(2011-05-13)
+ - added Dual Translation Spanish-English Automatic Detection Language
+ - fixed of icon size viewer in systray
+
+v0.2	(2011-05-09)
+ - added Systray for Message ballon of Translate Google
+ - added Get content of Clipboard for send to Api of Google Translate
+
+v0.1	(2011-04-29)
+ - added easy translate to Api of Google Translate
+
+
+......................................................................................
+Tested in Linux Ubuntu/Kubuntu 11.04 32bits, GNOME 2.32.1 /KDE 4.6:
+	java version "1.6.0_22"
+	OpenJDK Runtime Environment (IcedTea6 1.10.1) (6b22-1.10.1-0ubuntu1)
+	OpenJDK Client VM (build 20.0-b11, mixed mode, sharing)
+
+Tested in [Windows XP 32] [Windows 7 32/64]
+	java version "1.7.0-ea"
+	Java(TM) SE Runtime Environment (build 1.7.0-ea-b139)
+	Java HotSpot(TM) Client VM (build 21.0-b09, mixed mode, sharing)
+
+	Java version "1.6.0_27"
+	Java(TM) SE Runtime Environment (build 1.6.0_27-b07)
+	Java HotSpot(TM) Client VM (build 20.2-b06, mixed modem sharing)
+
+
+......................................................................................
+Tip Screen: You might need to increase your maximum heap. This can be done using the -Xmx parameter, such as: java -Xmx512m DualClip Translator.jar
+Tip OCR: Choose the area of text that is inside a frame, the inner part.
+
+
+......................................................................................
+	Google Translate API
+	http://translate.google.com
+	http://code.google.com/p/google-api-translate-java/
+	BSD License
+
+......................................................................................
+	Microsoft translator API
+	http://code.google.com/p/microsoft-translator-java-api/
+	Apache License, Version 2.0
+
+......................................................................................
+	JXGrabKey
+	http://sourceforge.net/projects/jxgrabkey/
+	GNU Library or "Lesser" General Public License version 3.0 (LGPLv3)
+
+......................................................................................
+	JIntellitype
+	http://melloware.com/products/jintellitype/index.html
+	The Apache Software License, Version 2.0
+
+......................................................................................
+	commons logging
+	http://commons.apache.org/logging/
+	The Apache Software License, Version 2.0
+
+......................................................................................
+	commons cli
+	http://www.apache.org/licenses/
+	Apache License Version 2.0, January 2004
+
+......................................................................................
+	SWT
+	http://www.eclipse.org/swt/
+	Eclipse Public License (EPL)
